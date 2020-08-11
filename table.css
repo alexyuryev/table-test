@@ -1,0 +1,79 @@
+.main {
+    height: 600px;
+    width: 600px;
+    position: relative;
+}
+
+.l-scrollable__container {
+    bottom: 0;
+    contain: layout;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.l-scrollable__scroll-area {
+    bottom: 0;
+    contain: layout;
+    left: 0;
+    overflow: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.l-scrollable__scroll-stub {
+    contain: layout;
+    height: 100%;
+    left: 0;
+    margin: 0;
+    opacity: 0;
+    padding: 0;
+    position: relative;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.l-scrollable__data {
+    contain: layout;
+    height: auto;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+
+    background-color: white;
+    border-collapse: collapse;
+    border: none;
+    box-sizing: border-box;
+    color: grey;
+    font: 400 13px/20px Roboto, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    outline: none;
+    table-layout: auto;
+}
+
+.l-scrollable__row {
+    border-bottom: 1px solid transparent;
+    border-top: 1px solid transparent;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.l-scrollable__cell {
+    box-shadow: -1px 0 darkgrey;
+    box-sizing: border-box;
+    vertical-align: top;
+    padding-left: 8px;
+    padding-right: 8px;
+    text-align: center;
+    width: 30%;
+}
+
+.l-scrollable__cell-number {
+    width: 40px;
+}

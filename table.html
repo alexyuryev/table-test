@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Камаз тестовое задание</title>
+	<link rel="stylesheet" type="text/css" href="table.css">
+</head>
+<body>
+	<div class="main">
+		<div class="l-scrollable__container">
+			<div
+					class="l-scrollable__scroll-area"
+					id="scrollElement"
+			>
+				<div class="l-scrollable__scroll-stub"
+					 id="scrollStubElement"
+				></div>
+				<table class="l-scrollable__data"
+					   id="dataComponent">
+				</table>
+			</div>
+		</div>
+	</div>
+	<script type="module">
+		import { initTable } from "./table.js";
+		import { peopleProvider } from "./testdata.js";
+
+		initTable(
+			document.getElementById("scrollElement"),
+			document.getElementById("scrollStubElement"),
+			document.getElementById("dataComponent"),
+			peopleProvider
+		);
+	</script>
+</body>
+</html>
